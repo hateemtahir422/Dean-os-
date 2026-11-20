@@ -1,0 +1,7 @@
+{
+  "name": "Dean's Daily OS",
+  "description": "Dean's Daily OS is a calm, mindful personal growth and daily routine platform. Build steady habits, organize your hours, and track daily consistency on your device.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
