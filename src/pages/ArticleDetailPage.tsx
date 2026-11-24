@@ -46,7 +46,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug }) =>
 
   useEffect(() => {
     if (article) {
-      const pageTitle = `${article.title} | Dean's Daily OS`;
+      const pageTitle = `${article.title} | TechSSP`;
       const metaDesc = article.metaDescription || article.excerpt;
       const origin = getSiteOrigin();
       const pageUrl = `${origin}/resources/${article.slug}`;
@@ -67,12 +67,13 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug }) =>
           inLanguage: 'en-US',
           author: {
             '@type': 'Organization',
-            name: "Dean's Daily OS",
+            name: 'TechSSP',
             url: origin,
           },
           publisher: {
             '@type': 'Organization',
-            name: "Dean's Daily OS",
+            name: 'TechSSP',
+            url: origin,
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
@@ -82,8 +83,8 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug }) =>
       });
     } else {
       updatePageMeta(
-        "Article Not Found | Dean's Daily OS",
-        "The requested personal growth guide was not found on Dean's Daily OS.",
+        "Article Not Found | TechSSP",
+        "The requested personal growth guide was not found on TechSSP.",
         true
       );
     }
@@ -251,7 +252,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug }) =>
           <span>Browse All Personal Growth Articles</span>
         </Link>
         <div className="text-xs text-stone-400 text-center sm:text-right">
-          Published by <Link to="/about" className="text-stone-600 hover:underline font-medium">Dean&apos;s Daily OS</Link> • Safe local wellness companion
+          Published by <Link to="/about" className="text-stone-600 hover:underline font-medium">TechSSP</Link> • Safe local wellness companion
         </div>
       </div>
 
@@ -295,7 +296,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug }) =>
             Put these insights into daily practice
           </h2>
           <p className="text-sm text-stone-600 leading-relaxed">
-            Organize steady hours and isolate your single bad habit in Dean&apos;s Daily OS.
+            Organize steady hours and isolate your single bad habit in TechSSP.
           </p>
         </div>
         <Link

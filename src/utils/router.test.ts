@@ -1,6 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert';
-import { parsePath, normalizeSiteUrl, normalizePathname } from './router';
+import {
+  parsePath,
+  normalizeSiteUrl,
+  normalizePathname,
+  PRODUCTION_SITE_URL,
+  getSiteOrigin,
+} from './router';
 import { ARTICLES } from '../data/articles';
 
 test('router parsing: parses clean public paths correctly', () => {
@@ -14,11 +20,13 @@ test('router parsing: parses clean public paths correctly', () => {
   assert.deepStrictEqual(parsePath('/dashboard'), { path: '/dashboard', route: 'app' });
 });
 
-test('router SEO helpers: normalizes paths and site URLs safely', () => {
+test('router SEO helpers: normalizes paths and site URLs safely with TechSSP canonical default', () => {
   assert.strictEqual(normalizePathname('/'), '/');
   assert.strictEqual(normalizePathname('/about/'), '/about');
   assert.strictEqual(normalizeSiteUrl('https://example.org/'), 'https://example.org');
   assert.strictEqual(normalizeSiteUrl('not-a-url'), '');
+  assert.strictEqual(PRODUCTION_SITE_URL, 'https://techssp.com');
+  assert.strictEqual(getSiteOrigin(), 'https://techssp.com');
 });
 
 test('router parsing: parses article slugs with parameters', () => {

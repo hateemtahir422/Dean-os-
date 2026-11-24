@@ -7,17 +7,15 @@ import {getSecurityHeaders} from './src/utils/securityHeaders';
 
 function seoDomainPlugin(): Plugin {
   const rawSiteUrl = (process.env.VITE_SITE_URL || '').trim().replace(/\/+$/, '');
-  const siteUrl = /^https?:\/\//i.test(rawSiteUrl) ? rawSiteUrl : '';
+  const siteUrl = /^https?:\/\//i.test(rawSiteUrl) ? rawSiteUrl : 'https://techssp.com';
 
   const applyDomainToRobots = (content: string) => {
-    if (!siteUrl) return content;
     const base = content.replace(/^Sitemap:.*$/gm, '').trimEnd();
-    return `${base}\nSitemap: ${siteUrl}/sitemap.xml\n`;
+    return `${base}\n\nSitemap: ${siteUrl}/sitemap.xml\n`;
   };
 
   const applyDomainToSitemap = (content: string) => {
-    if (!siteUrl) return content;
-    return content.replace(/<loc>(\/[^<]*)<\/loc>/g, (_m, routePath) => `<loc>${siteUrl}${routePath}</loc>`);
+    return content.replace(/<loc>(https?:\/\/[^/]+)?(\/[^<]*)<\/loc>/g, (_m, _orig, routePath) => `<loc>${siteUrl}${routePath}</loc>`);
   };
 
   return {

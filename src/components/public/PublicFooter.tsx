@@ -1,6 +1,7 @@
 import React from 'react';
-import { Compass, ArrowRight, Shield, Heart, Mail } from 'lucide-react';
+import { ArrowRight, Shield } from 'lucide-react';
 import { Link } from '../../utils/router';
+import { BrandMark } from '../BrandMark';
 
 export const PublicFooter: React.FC = () => {
   return (
@@ -10,11 +11,9 @@ export const PublicFooter: React.FC = () => {
           {/* Col 1: Brand & Philosophy */}
           <div className="md:col-span-2 space-y-4">
             <Link to="/" className="inline-flex items-center gap-2.5 hover:opacity-85 transition-opacity cursor-pointer">
-              <div className="w-8 h-8 rounded-xl bg-[#EBF4EE] border border-[#BCDDC7] flex items-center justify-center text-[#3D684A]">
-                <Compass className="w-4 h-4" />
-              </div>
+              <BrandMark size="md" />
               <span className="text-base font-bold text-stone-800 tracking-tight">
-                Dean's Daily OS
+                TechSSP
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-stone-500 leading-relaxed max-w-md">
@@ -86,7 +85,7 @@ export const PublicFooter: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-[#EAE4D9] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500 text-center sm:text-left">
           <p>
-            © {new Date().getFullYear()} Dean's Daily OS. Built for mindful, steady daily consistency.
+            © {new Date().getFullYear()} TechSSP. Built for mindful, steady daily consistency.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-[11px]">
             <Link to="/privacy" className="py-1.5 sm:py-0 px-1 hover:underline">

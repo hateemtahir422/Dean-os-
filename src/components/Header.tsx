@@ -4,10 +4,11 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import { Bell, BellOff, Volume2, VolumeX, Clock, Sparkles, Globe } from 'lucide-react';
+import { Bell, BellOff, Volume2, VolumeX, Clock, Globe } from 'lucide-react';
 import { getGreeting, getKarachiDate, getKarachiTimeString, formatDisplayDate } from '../utils/time';
 import { calculatePrayerTimes, DEFAULT_PRAYER_CONFIG, getPrayerStatus } from '../utils/prayer';
 import { getKarachiTimeParts } from '../utils/time';
+import { BrandMark } from './BrandMark';
 
 interface HeaderProps {
   soundEnabled: boolean;
@@ -49,8 +50,8 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="min-w-0">
           <div className="flex items-center gap-2">
             <h1 className="text-base sm:text-xl font-semibold tracking-tight text-stone-800 flex items-center gap-2 truncate">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#6B8E7B] inline-block shadow-xs shrink-0" />
-              <span className="truncate">Dean's Daily OS</span>
+              <BrandMark size="sm" />
+              <span className="truncate">TechSSP</span>
             </h1>
             <span className="hidden sm:inline-block text-[11px] font-medium px-2 py-0.5 rounded-full bg-[#F2EDE4] text-stone-600 border border-[#E5DFD4] shrink-0">
               Asia/Karachi

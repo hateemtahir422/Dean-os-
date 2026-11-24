@@ -23,8 +23,8 @@ export const ContactPage: React.FC = () => {
 
   useEffect(() => {
     updatePageMeta(
-      "Contact Us – Support & Feedback | Dean's Daily OS",
-      "Contact Dean's Daily OS directly with routine feedback, personal growth article ideas, or privacy inquiries at hateemtahir4@gmail.com."
+      "Contact Us – Support & Feedback | TechSSP",
+      "Contact TechSSP directly with routine feedback, personal growth article ideas, or privacy inquiries at hateemtahir4@gmail.com."
     );
   }, []);
 
@@ -37,14 +37,14 @@ export const ContactPage: React.FC = () => {
   };
 
   const handleCopyDraft = () => {
-    const fullDraft = `From: ${name} (${email})\nSubject: ${subject || 'Inquiry regarding Dean\'s Daily OS'}\n\n${message}`;
+    const fullDraft = `From: ${name} (${email})\nSubject: ${subject || 'Inquiry regarding TechSSP'}\n\n${message}`;
     navigator.clipboard.writeText(fullDraft);
     setCopiedDraft(true);
     setTimeout(() => setCopiedDraft(false), 2500);
   };
 
   const generateMailtoUrl = () => {
-    const sub = encodeURIComponent(subject || `Inquiry from ${name || 'Visitor'} via Dean's Daily OS`);
+    const sub = encodeURIComponent(subject || `Inquiry from ${name || 'Visitor'} via TechSSP`);
     const body = encodeURIComponent(`Hello,\n\n${message}\n\nFrom,\n${name}\nEmail: ${email}`);
     return `mailto:${recipientEmail}?subject=${sub}&body=${body}`;
   };
@@ -149,7 +149,7 @@ export const ContactPage: React.FC = () => {
                   Your Message Is Ready to Send!
                 </h2>
                 <p className="text-sm text-stone-600 leading-relaxed max-w-md mx-auto">
-                  Because Dean's Daily OS does not keep a tracking database, your message was formatted for direct delivery to <strong className="inline-block break-all max-w-full">{recipientEmail}</strong>.
+                  Because TechSSP does not keep a tracking database, your message was formatted for direct delivery to <strong className="inline-block break-all max-w-full">{recipientEmail}</strong>.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
@@ -214,7 +214,7 @@ export const ContactPage: React.FC = () => {
                       required
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      placeholder="e.g. Dean, Sarah, Alex..."
+                      placeholder="e.g. Alex, Sarah, Sam..."
                       className="w-full bg-[#FAF8F5] border border-stone-300 rounded-xl px-3.5 py-3 sm:py-2.5 text-sm sm:text-xs text-stone-800 focus:outline-none focus:border-[#4A7C59]"
                     />
                   </div>

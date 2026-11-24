@@ -897,7 +897,7 @@ function validateProjects(
 }
 
 /**
- * Validates and sanitizes a Dean's Daily OS JSON backup string (versions 1 and 2)
+ * Validates and sanitizes a TechSSP JSON backup string (versions 1 and 2)
  * before any storage mutation takes place.
  */
 export function validateBackupJson(jsonString: string): BackupValidationResult {
@@ -936,7 +936,7 @@ export function validateBackupJson(jsonString: string): BackupValidationResult {
   }
 
   if (parsed.version === undefined) {
-    return fail('Missing required "version" field. Expected a Dean\'s Daily OS backup (version 1 or 2).');
+    return fail('Missing required "version" field. Expected a TechSSP backup (version 1 or 2).');
   }
   if (typeof parsed.version !== 'number' || !Number.isInteger(parsed.version) || !SUPPORTED_VERSIONS.has(parsed.version)) {
     return fail(`Unsupported backup version (${String(parsed.version)}). Supported versions are 1 and 2.`);

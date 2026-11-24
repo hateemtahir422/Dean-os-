@@ -11,7 +11,7 @@ export const ResourcesPage: React.FC = () => {
     const pageUrl = `${origin}/resources`;
 
     updatePageMeta(
-      "Personal Growth & Daily Routine Resources – Dean's Daily OS",
+      "Personal Growth & Daily Routine Resources – TechSSP",
       "Read practical guides on building daily routines, developing self-discipline without motivation, breaking bad habits, and calm planning.",
       {
         isPrivate: false,
@@ -20,7 +20,7 @@ export const ResourcesPage: React.FC = () => {
         structuredData: {
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: "Personal Growth & Daily Routine Resources – Dean's Daily OS",
+          name: "Personal Growth & Daily Routine Resources – TechSSP",
           description:
             'Read practical guides on building daily routines, developing self-discipline without motivation, breaking bad habits, and calm planning.',
           url: pageUrl,
@@ -139,7 +139,7 @@ export const ResourcesPage: React.FC = () => {
             Put these ideas into daily practice
           </h2>
           <p className="text-sm sm:text-xs text-stone-600 leading-relaxed">
-            Apply steady time blocks and habit tracking in Dean&apos;s Daily OS right now, or <Link to="/about" className="text-[#3D684A] font-semibold hover:underline">learn how our routine platform works</Link>.
+            Apply steady time blocks and habit tracking in TechSSP right now, or <Link to="/about" className="text-[#3D684A] font-semibold hover:underline">learn how our routine platform works</Link>.
           </p>
         </div>
         <Link

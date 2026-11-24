@@ -5,8 +5,8 @@ import { Link, updatePageMeta } from '../utils/router';
 export const TermsPage: React.FC = () => {
   useEffect(() => {
     updatePageMeta(
-      "Terms of Service – Usage Guidelines | Dean's Daily OS",
-      "Read the Dean's Daily OS Terms of Service covering personal productivity usage, wellness disclaimers, and local browser data ownership."
+      "Terms of Service – Usage Guidelines | TechSSP",
+      "Read the TechSSP Terms of Service covering personal productivity usage, wellness disclaimers, and local browser data ownership."
     );
   }, []);
 
@@ -22,13 +22,13 @@ export const TermsPage: React.FC = () => {
           Terms of Service
         </h1>
         <p className="text-sm text-stone-500">
-          Last updated: November 2, 2026
+          Last updated: November 24, 2026
         </p>
       </div>
 
       {/* 2. Introduction */}
       <p className="text-sm text-stone-700 leading-relaxed font-normal">
-        Welcome to Dean's Daily OS. By accessing or using our public website, reading our resources, or utilizing the routine dashboard, you agree to these Terms of Service. If you do not agree with these terms, you should discontinue using the platform.
+        Welcome to TechSSP. By accessing or using our public website, reading our resources, or utilizing the routine dashboard, you agree to these Terms of Service. If you do not agree with these terms, you should discontinue using the platform.
       </p>
 
       {/* 3. Purpose & Wellness Disclaimer */}
@@ -38,7 +38,7 @@ export const TermsPage: React.FC = () => {
           <span>1. Purpose and Informational Disclaimer</span>
         </h2>
         <p>
-          Dean's Daily OS is an open personal productivity tool and self-discipline companion designed to help individuals plan their daily schedule and build steady habits.
+          TechSSP is an open personal productivity tool and self-discipline companion designed to help individuals plan their daily schedule and build steady habits.
         </p>
         <div className="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DEC9] text-sm sm:text-xs text-stone-700 space-y-2">
           <p className="font-semibold text-stone-800 flex items-center gap-1.5">
@@ -46,7 +46,7 @@ export const TermsPage: React.FC = () => {
             Wellness & Medical Notice:
           </p>
           <p className="leading-relaxed">
-            The content, habit reflection prompts, and routine suggestions provided by Dean's Daily OS are for informational and self-improvement purposes only. They do not constitute medical, psychological, psychiatric, or addiction treatment counseling. If you are struggling with severe physical, clinical, or mental health challenges, please consult a qualified healthcare professional.
+            The content, habit reflection prompts, and routine suggestions provided by TechSSP are for informational and self-improvement purposes only. They do not constitute medical, psychological, psychiatric, or addiction treatment counseling. If you are struggling with severe physical, clinical, or mental health challenges, please consult a qualified healthcare professional.
           </p>
         </div>
       </section>
@@ -58,13 +58,13 @@ export const TermsPage: React.FC = () => {
           <span>2. Acceptable Website Usage</span>
         </h2>
         <p>
-          You agree to use Dean's Daily OS only for lawful, personal, and non-commercial productivity purposes. When accessing our services, you agree not to:
+          You agree to use TechSSP only for lawful, personal, and non-commercial productivity purposes. When accessing our services, you agree not to:
         </p>
         <ul className="list-disc pl-5 space-y-1.5 text-stone-600">
           <li>Attempt to disrupt, compromise, or circumvent the operation, security, or integrity of the website or hosting infrastructure.</li>
           <li>Deploy automated scripts, bots, spiders, or scrapers that impose unreasonable load on the servers.</li>
           <li>Transmit malicious code, viruses, trojans, or harmful scripts to the platform.</li>
-          <li>Impersonate any person or misrepresent your affiliation with Dean's Daily OS.</li>
+          <li>Impersonate any person or misrepresent your affiliation with TechSSP.</li>
         </ul>
       </section>
 
@@ -75,10 +75,10 @@ export const TermsPage: React.FC = () => {
           <span>3. Local Data Responsibility & Intellectual Property</span>
         </h2>
         <p>
-          <strong>Your Data:</strong> Because all checklist items, notes, and habit records are stored purely on your local device, you maintain 100% ownership over your personal data. Dean's Daily OS cannot access, alter, or recover your local records if you clear your browser cache or reset your device. We encourage you to download periodic JSON backups via Settings.
+          <strong>Your Data:</strong> Because all checklist items, notes, and habit records are stored purely on your local device, you maintain 100% ownership over your personal data. TechSSP cannot access, alter, or recover your local records if you clear your browser cache or reset your device. We encourage you to download periodic JSON backups via Settings.
         </p>
         <p>
-          <strong>Platform Intellectual Property:</strong> All original articles, guides, site layouts, graphics, branding, and code provided on the public website are owned by Dean's Daily OS and protected by applicable copyright laws. You may read, print, and share links to our public articles for personal, non-commercial use.
+          <strong>Platform Intellectual Property:</strong> All original articles, guides, site layouts, graphics, branding, and code provided on the public website are owned by TechSSP and protected by applicable copyright laws. You may read, print, and share links to our public articles for personal, non-commercial use.
         </p>
       </section>
 
@@ -88,10 +88,10 @@ export const TermsPage: React.FC = () => {
           4. Disclaimer of Warranties and Limitation of Liability
         </h2>
         <p>
-          Dean's Daily OS is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, whether express or implied.
+          TechSSP is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, whether express or implied.
         </p>
         <p>
-          To the maximum extent permitted by applicable law, Dean's Daily OS and its creators shall not be liable for any direct, indirect, incidental, or consequential damages resulting from your use of, or inability to use, the platform or any loss of local browser data.
+          To the maximum extent permitted by applicable law, TechSSP and its creators shall not be liable for any direct, indirect, incidental, or consequential damages resulting from your use of, or inability to use, the platform or any loss of local browser data.
         </p>
       </section>
 

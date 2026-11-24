@@ -54,6 +54,8 @@ export function navigate(to: string) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+export const PRODUCTION_SITE_URL = 'https://techssp.com';
+
 export function normalizeSiteUrl(rawUrl?: string): string {
   const trimmed = (rawUrl || '').trim().replace(/\/+$/, '');
   return /^https?:\/\//i.test(trimmed) ? trimmed : '';
@@ -66,9 +68,7 @@ export function getSiteOrigin(): string {
     typeof import.meta.env.VITE_SITE_URL === 'string'
       ? normalizeSiteUrl(import.meta.env.VITE_SITE_URL)
       : '';
-  if (configured) return configured;
-  if (typeof window !== 'undefined') return window.location.origin;
-  return '';
+  return configured || PRODUCTION_SITE_URL;
 }
 
 export function normalizePathname(pathname: string): string {
@@ -133,7 +133,7 @@ export function updatePageMeta(
   setMetaTag('property', 'og:title', title);
   setMetaTag('property', 'og:description', description);
   setMetaTag('property', 'og:type', ogType);
-  setMetaTag('property', 'og:site_name', "Dean's Daily OS");
+  setMetaTag('property', 'og:site_name', 'TechSSP');
   setMetaTag('name', 'twitter:card', 'summary_large_image');
   setMetaTag('name', 'twitter:title', title);
   setMetaTag('name', 'twitter:description', description);

@@ -72,8 +72,8 @@ export const DashboardApp: React.FC<DashboardAppProps> = ({ onBackToPublicSite }
   useEffect(() => {
     // Keep user's routine dashboard private from search engine indexes
     updatePageMeta(
-      "Dean's Daily OS – Personal Routine & Habit Dashboard",
-      "Your private daily routine checklist, bad habit tracker, and schedule organizer.",
+      'TechSSP – Personal Routine & Habit Dashboard',
+      'Your private daily routine checklist, bad habit tracker, and schedule organizer.',
       true
     );
   }, []);
@@ -157,7 +157,7 @@ export const DashboardApp: React.FC<DashboardAppProps> = ({ onBackToPublicSite }
     const result = await requestNotificationPermission();
     setNotificationsEnabled(result === 'granted');
     if (result === 'granted') {
-      sendDesktopNotification("Dean's Daily OS", 'Notifications activated for prayer and routine alerts.');
+      sendDesktopNotification('TechSSP', 'Notifications activated for prayer and routine alerts.');
     }
   };
 
@@ -326,7 +326,7 @@ export const DashboardApp: React.FC<DashboardAppProps> = ({ onBackToPublicSite }
               </div>
               <div>
                 <h3 className="text-lg font-bold text-stone-800 tracking-tight">
-                  Welcome to Your Daily OS
+                  Welcome to TechSSP
                 </h3>
                 <p className="text-xs text-stone-500">
                   A calm, mindful routine & habit companion
@@ -348,7 +348,7 @@ export const DashboardApp: React.FC<DashboardAppProps> = ({ onBackToPublicSite }
                   autoFocus
                   value={onboardingName}
                   onChange={(e) => setOnboardingName(e.target.value)}
-                  placeholder="Enter your name (e.g. Dean, Alex...)"
+                  placeholder="Enter your name (e.g. Alex, Sarah...)"
                   className="w-full bg-[#FAF8F5] border border-stone-300 rounded-xl px-3.5 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-[#4A7C59] focus:ring-1 focus:ring-[#4A7C59]"
                 />
               </div>
@@ -377,7 +377,7 @@ export const DashboardApp: React.FC<DashboardAppProps> = ({ onBackToPublicSite }
       {/* Footer */}
       <footer className="border-t border-[#EAE4D9] bg-[#FAF8F5] px-4 py-5 text-center text-xs text-stone-500">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>Dean's Daily OS • Mindful Routine in Asia/Karachi (PKT)</span>
+          <span>TechSSP • Mindful Routine in Asia/Karachi (PKT)</span>
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-[11px] text-stone-400">
             {onBackToPublicSite && (
               <button

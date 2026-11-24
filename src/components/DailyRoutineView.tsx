@@ -651,7 +651,7 @@ export const DailyRoutineView: React.FC<DailyRoutineViewProps> = ({
                   required
                   value={tempName}
                   onChange={(e) => setTempName(e.target.value)}
-                  placeholder="e.g. Alex, Sarah, Dean..."
+                  placeholder="e.g. Alex, Sarah, Sam..."
                   className="w-full bg-[#FAF8F5] border border-stone-300 rounded-xl px-3.5 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-[#4A7C59] focus:ring-1 focus:ring-[#4A7C59]"
                 />
               </div>

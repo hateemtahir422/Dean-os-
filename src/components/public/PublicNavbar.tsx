@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Sparkles, ArrowRight, Menu, X, Compass, BookOpen, User, Mail, Shield } from 'lucide-react';
+import { ArrowRight, Menu, X } from 'lucide-react';
 import { Link, useRouter } from '../../utils/router';
+import { BrandMark } from '../BrandMark';
 
 export const PublicNavbar: React.FC = () => {
   const { routeState } = useRouter();
@@ -26,12 +27,10 @@ export const PublicNavbar: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-2.5 group cursor-pointer">
-          <div className="w-9 h-9 rounded-xl bg-[#EBF4EE] border border-[#BCDDC7] flex items-center justify-center text-[#3D684A] group-hover:scale-105 transition-transform shadow-2xs">
-            <Compass className="w-5 h-5" />
-          </div>
+          <BrandMark size="lg" className="group-hover:scale-105 transition-transform" />
           <div>
             <span className="text-base font-bold text-stone-800 tracking-tight block">
-              Dean's Daily OS
+              TechSSP
             </span>
             <span className="text-[10px] uppercase font-semibold tracking-wider text-[#5B7F6B] block -mt-1">
               Personal Growth Platform

@@ -201,7 +201,7 @@ export const ARTICLES: Article[] = [
       },
       {
         heading: '4. Why Habit Tracking Must Be Isolated From Daily Tasks',
-        body: 'A fundamental design principle of Dean\'s Daily OS is keeping the Bad Habit Streak Tracker completely independent from your daily routine checklist. If you miss a study session, that is merely an unfinished to-do item to handle tomorrow. If you slip on your target habit, you log an honest NO, note the trigger, and rebuild your streak. Isolating the habit tracker protects your overall confidence from catastrophic collapse.',
+        body: 'A fundamental design principle of TechSSP is keeping the Bad Habit Streak Tracker completely independent from your daily routine checklist. If you miss a study session, that is merely an unfinished to-do item to handle tomorrow. If you slip on your target habit, you log an honest NO, note the trigger, and rebuild your streak. Isolating the habit tracker protects your overall confidence from catastrophic collapse.',
         practicalSteps: [
           'Log your habit status honestly once per day during your evening review.',
           'When you answer YES, celebrate the quiet milestone without overconfidence.',

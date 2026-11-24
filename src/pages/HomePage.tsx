@@ -17,7 +17,7 @@ import { ARTICLES } from '../data/articles';
 export const HomePage: React.FC = () => {
   useEffect(() => {
     updatePageMeta(
-      "Dean's Daily OS – Personal Growth & Daily Routine Platform",
+      "TechSSP – Personal Growth & Daily Routine Platform",
       "Build calm daily routines, track a bad-habit streak separately, and stay consistent on your device with zero ads or signups."
     );
   }, []);
@@ -36,7 +36,7 @@ export const HomePage: React.FC = () => {
         </h1>
 
         <p className="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
-          Dean's Daily OS is an intentional personal growth platform designed to help you organize your daily hours, build steady self-discipline, and break free from unwanted habits—without stressful gamification or complex productivity clutter.
+          TechSSP is an intentional personal growth platform designed to help you organize your daily hours, build steady self-discipline, and break free from unwanted habits—without stressful gamification or complex productivity clutter.
         </p>
 
         {/* Clear Primary Call to Action */}
@@ -148,7 +148,7 @@ export const HomePage: React.FC = () => {
               Most productivity apps suffer from feature bloat: complex databases, intricate project boards, and notification barrage that create more stress than focus. When planning becomes exhausting, we abandon the app altogether.
             </p>
             <p>
-              Dean's Daily OS was born from a desire for quiet, grounded intentionality. We believe that knowing what to do in the current hour, having a dependable routine, and closing the evening with a peaceful checklist is what truly fosters discipline.
+              TechSSP was born from a desire for quiet, grounded intentionality. We believe that knowing what to do in the current hour, having a dependable routine, and closing the evening with a peaceful checklist is what truly fosters discipline.
             </p>
           </div>
           <div className="pt-1">
@@ -156,7 +156,7 @@ export const HomePage: React.FC = () => {
               to="/about"
               className="inline-flex items-center gap-1.5 py-2 sm:py-0.5 text-sm sm:text-xs font-bold text-[#3D684A] hover:underline"
             >
-              Read more about Dean&apos;s Daily OS mission &amp; philosophy <ArrowRight className="w-3.5 h-3.5" />
+              Read more about TechSSP&apos;s mission &amp; philosophy <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>

@@ -14,8 +14,8 @@ import { Link, updatePageMeta } from '../utils/router';
 export const PrivacyPage: React.FC = () => {
   useEffect(() => {
     updatePageMeta(
-      "Privacy Policy – Local Storage & Privacy | Dean's Daily OS",
-      "Review Dean's Daily OS Privacy Policy: 9 localStorage keys, zero tracking cookies or external analytics, Contact email handling, and erasure."
+      "Privacy Policy – Local Storage & Privacy | TechSSP",
+      "Review TechSSP Privacy Policy: 9 localStorage keys, zero tracking cookies or external analytics, Contact email handling, and erasure."
     );
   }, []);
 
@@ -31,7 +31,7 @@ export const PrivacyPage: React.FC = () => {
           Privacy Policy
         </h1>
         <p className="text-sm text-stone-500">
-          Last reviewed &amp; code-verified: November 16, 2026
+          Last reviewed &amp; code-verified: November 24, 2026
         </p>
       </div>
 
@@ -42,7 +42,7 @@ export const PrivacyPage: React.FC = () => {
           Summary: On-Device Local Storage Architecture
         </h2>
         <p className="text-sm text-stone-700 leading-relaxed font-normal">
-          Dean's Daily OS operates on a client-side, local-first architecture. <strong>The application does not run a remote user database, does not require account registration, and makes zero background API calls to transmit your daily routines, checklists, or habit answers to external servers.</strong> Your routine and habit entries are stored inside your web browser's local storage on your device (except if you voluntarily choose to send us an email via the Contact page).
+          TechSSP operates on a client-side, local-first architecture. <strong>The application does not run a remote user database, does not require account registration, and makes zero background API calls to transmit your daily routines, checklists, or habit answers to external servers.</strong> Your routine and habit entries are stored inside your web browser's local storage on your device (except if you voluntarily choose to send us an email via the Contact page).
         </p>
       </div>
 
@@ -53,7 +53,7 @@ export const PrivacyPage: React.FC = () => {
           <span>1. What Information Is Collected and Stored</span>
         </h2>
         <p>
-          Any routine customizations, completion logs, preferences, and habit check-ins you enter in the dashboard are saved in your browser using standard HTML5 <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">localStorage</code> under the following keys:
+          Any routine customizations, completion logs, preferences, and habit check-ins you enter in the dashboard are saved in your browser using standard HTML5 <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">localStorage</code> under the following keys (retaining internal <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">deans_os_*_v1</code> prefixes so existing users&apos; saved routines and streaks are preserved):
         </p>
 
         <div className="rounded-2xl border border-[#EBE4D8] overflow-hidden bg-white">
@@ -109,7 +109,7 @@ export const PrivacyPage: React.FC = () => {
           <span>2. Local vs. Remote Storage &amp; Important Limitations</span>
         </h2>
         <p>
-          All application routine, habit, prayer, and preference records are stored <strong>100% locally in your browser</strong>. Dean's Daily OS does not operate user accounts, cloud sync servers, or remote analytics databases, and its client-side code never uploads your stored dashboard data over the network.
+          All application routine, habit, prayer, and preference records are stored <strong>100% locally in your browser</strong>. TechSSP does not operate user accounts, cloud sync servers, or remote analytics databases, and its client-side code never uploads your stored dashboard data over the network.
         </p>
         <ul className="list-disc pl-5 space-y-2 text-stone-600">
           <li><strong>Unencrypted Local Storage:</strong> Browser <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">localStorage</code> entries (and exported <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">.json</code> backup files) are stored in plain text without client-side encryption. Anyone with access to your unlocked device or browser profile—or browser extensions with page access—could view or modify them.</li>
@@ -125,7 +125,7 @@ export const PrivacyPage: React.FC = () => {
           <span>3. Cookies and Tracking Technologies</span>
         </h2>
         <p>
-          The Dean's Daily OS application code does <strong>NOT set or read cookies</strong> and does not use <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">sessionStorage</code> or <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">IndexedDB</code>:
+          The TechSSP application code does <strong>NOT set or read cookies</strong> and does not use <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">sessionStorage</code> or <code className="bg-[#FAF8F5] px-1.5 py-0.5 rounded border border-stone-200 text-stone-800">IndexedDB</code>:
         </p>
         <ul className="list-disc pl-5 space-y-1.5 text-stone-600">
           <li>The codebase sets zero HTTP or JavaScript tracking/advertising cookies.</li>

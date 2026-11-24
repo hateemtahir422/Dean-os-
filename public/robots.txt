@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /app
 Disallow: /dashboard
+
+Sitemap: https://techssp.com/sitemap.xml

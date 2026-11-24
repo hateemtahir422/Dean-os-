@@ -19,8 +19,8 @@ import { Link, updatePageMeta } from '../utils/router';
 export const AboutPage: React.FC = () => {
   useEffect(() => {
     updatePageMeta(
-      "About Dean's Daily OS – Calm Routine & Growth Platform",
-      "Discover the mission behind Dean's Daily OS: helping students, freelancers, and everyday people build steady habits privately."
+      "About TechSSP – Calm Routine & Growth Platform",
+      "Discover the mission behind TechSSP: helping students, freelancers, and everyday people build steady habits privately."
     );
   }, []);
 
@@ -33,23 +33,23 @@ export const AboutPage: React.FC = () => {
           <span>Our Mission & Purpose</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-stone-800 tracking-tight">
-          About Dean's Daily OS
+          About TechSSP
         </h1>
         <p className="text-base text-stone-600 leading-relaxed max-w-2xl font-normal">
-          Dean's Daily OS is a calm, distraction-free personal growth platform and routine organizer. We help people establish sustainable daily rhythms, build lasting self-discipline, and break free from unwanted habits with <Link to="/privacy" className="text-[#3D684A] font-semibold hover:underline">on-device browser privacy</Link>.
+          TechSSP is a calm, distraction-free personal growth platform and routine organizer. We help people establish sustainable daily rhythms, build lasting self-discipline, and break free from unwanted habits with <Link to="/privacy" className="text-[#3D684A] font-semibold hover:underline">on-device browser privacy</Link>.
         </p>
       </div>
 
       {/* 2. Platform Purpose & Core Philosophy */}
       <section className="space-y-5 text-stone-700 leading-relaxed text-sm sm:text-base">
         <h2 className="text-xl sm:text-2xl font-bold text-stone-800 tracking-tight">
-          The Purpose Behind Dean's Daily OS
+          The Purpose Behind TechSSP
         </h2>
         <p>
           Most productivity software has become noisy, complicated, and anxiety-inducing. Between elaborate Kanban boards, complex relational databases, notification overload, and punishing streak trackers that shame you for taking a sick day, the tools meant to support our lives often demand more energy than the work itself.
         </p>
         <p>
-          Dean's Daily OS was built on a different principle: <strong>calm intentionality</strong>. We believe that true personal discipline is not about obsessively quantifying every minute or maintaining artificial metrics for basic human living. It is about having a clear, dependable scaffolding for each day—waking with purpose, staying hydrated, showing up for deep study or client work, stepping away for restorative pause, honoring personal reflection, and closing the evening with closure.
+          TechSSP was built on a different principle: <strong>calm intentionality</strong>. We believe that true personal discipline is not about obsessively quantifying every minute or maintaining artificial metrics for basic human living. It is about having a clear, dependable scaffolding for each day—waking with purpose, staying hydrated, showing up for deep study or client work, stepping away for restorative pause, honoring personal reflection, and closing the evening with closure.
         </p>
       </section>
 
@@ -60,7 +60,7 @@ export const AboutPage: React.FC = () => {
           <h2>Who This Platform Is Intended to Help</h2>
         </div>
         <p className="text-sm text-stone-600 leading-relaxed">
-          Dean's Daily OS was designed for anyone seeking a simpler, grounded way to navigate their days:
+          TechSSP was designed for anyone seeking a simpler, grounded way to navigate their days:
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -165,7 +165,7 @@ export const AboutPage: React.FC = () => {
           Our Commitment to Honesty &amp; Simplicity
         </h2>
         <p>
-          We do not claim to be a venture-backed tech corporation or boast artificial team sizes. Dean's Daily OS is an authentic, independent personal routine platform crafted with care, free for all visitors to use without accounts, paywalls, or privacy trade-offs. Have questions or suggestions? Visit our <Link to="/contact" className="text-[#3D684A] font-semibold hover:underline">Contact Us page</Link>.
+          We do not claim to be a venture-backed tech corporation or boast artificial team sizes. TechSSP is an authentic, independent personal routine platform crafted with care, free for all visitors to use without accounts, paywalls, or privacy trade-offs. Have questions or suggestions? Visit our <Link to="/contact" className="text-[#3D684A] font-semibold hover:underline">Contact Us page</Link>.
         </p>
       </section>
 
